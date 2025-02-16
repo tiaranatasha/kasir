@@ -87,7 +87,7 @@ $penjualan = $conn->query("SELECT p.penjualan_id, p.tanggal_penjualan, pl.nama_p
     </div>
     <div class="content">
         <h2 class="mb-4 text-center">Data Penjualan</h2>
-        <a href="cetak_data.php" class="btn btn-primary mb-3">🖨️ Cetak Semua Data</a>
+        <a href="detail_penjualan.php" class="btn btn-primary mb-3"> 📊 Cetak Semua Data</a>
         <div class="card p-3 mb-4">
             <form method="post">
                 <div class="row mb-3">
@@ -145,7 +145,6 @@ $penjualan = $conn->query("SELECT p.penjualan_id, p.tanggal_penjualan, pl.nama_p
                         <td><?= $row['nama_produk'] ?></td>
                         <td><?= $row['jumlah_produk'] ?></td>
                         <td><?= number_format($row['total_harga'], 0, ',', '.') ?></td>
-
                     </tr>
                 <?php } ?>
             </tbody>
