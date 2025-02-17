@@ -44,11 +44,28 @@ $detail_penjualan = $conn->query("SELECT dp.detail_id, p.tanggal_penjualan, pl.n
         th {
             background-color: #f2f2f2;
         }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .btn:hover {
+            background-color: darkblue;
+        }
     </style>
 </head>
 
 <body>
     <h2>Detail Penjualan</h2>
+    
+    <a href="cetak_data.php" class="btn">🖨️ Cetak Semua Data</a>
     
     <table>
         <tr>
